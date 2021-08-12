@@ -9,6 +9,7 @@ phases:
    - export BUCKET=test-pipeline-output-code
    - export SAM_CLI_TELEMETRY=0
    - sam package --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+   - cat outputtemplate.yml
    - # aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --s3-prefix codepipeline --output-template-file outputtemplate.yml
 artifacts:
  type: zip
