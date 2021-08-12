@@ -5,4 +5,4 @@ Resources:
    Handler: index.handler
    Runtime: nodejs14.x
    FunctionName: SampleNodejs
-   # CodeUri: ./src #Directory the source file is
+   CodeUri: ./src #Directory the source file is
