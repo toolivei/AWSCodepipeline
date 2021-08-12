@@ -5,6 +5,7 @@ phases:
    nodejs: 14
  build: 
   commands:
+   - echo "Start building..."
    - export BUCKET=test-pipeline-output-code
    - export SAM_CLI_TELEMETRY=0
    - sam package --s3-bucket $BUCKET --output-template-file outputtemplate.yml
