@@ -1,0 +1,8 @@
+Resources:
+ SampleFunction:
+  Type: AWS::Serverless::Function
+  Properties:
+   Handler: index.handler
+   Runtime: nodejs14.x
+   FunctionName: SampleNodejs
+   CodeUri: ./src #Directory the source file is
